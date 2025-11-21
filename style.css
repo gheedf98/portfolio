@@ -174,7 +174,8 @@ footer {
 }
 
 
-button {
+.button {
+    color: #00bcd4;
     text-align: center;
     background: #1c1c1e;
     padding: 1em;
