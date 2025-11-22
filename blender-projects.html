@@ -8,24 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
+        h2 {
+            text-align: center;
+
+
+        }
+
         p {
-            color: #00bcd4;
-            text-align: center;
-
+            max-width: 600px;
+            margin-top: 1em;
+            color: #bbb;
         }
 
 
-        #chess {
-            text-align: center;
-            margin: 40px;
-        }
-        model-viewer{
-            width: 300px; height: 300px; margin: auto; display: block;
+        model-viewer {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            display: block;
             background-color: antiquewhite;
             border: 3px solid#000000;
             border-radius: 8px;
             padding: 10px;
 
+        }
+
+          #blender {
+            margin: 100px;
+            padding: 120px, 20px, 10px, 20px;
         }
     </style>
 </head>
@@ -35,54 +45,71 @@
     <header>
         <h1>Blender Projects</h1>
     </header>
-    <br>
-    <br>
-    <br>
-    <h2 id="chess">Our first blender assignement this semester is to model chess pieces.</h2>
-    <br>
-    <p>Pawn</p>
-    <br>
-    <div>
-        <model-viewer src="models/pawn.glb" alt="Pawn Model" auto-rotate camera-controls></model-viewer>
-    </div>
-    <br>
-    <hr>
-    <p>Rook</p>
-    <br>
-    <div>
-        <model-viewer src="models/rook.glb" alt="Rook Model" auto-rotate camera-controls></model-viewer> </model-viewer>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <p>King</p>
-    <br>
-    <div>
-        <model-viewer src="models/king.glb" alt="King Model" auto-rotate camera-controls></model-viewer>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <p>Queen</p>
-    <br>
-    <div>
-        <model-viewer src="models/queen.glb" alt="Queen Model" auto-rotate camera-controls></model-viewer>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <p>Bishop</p>
-    <br>
-    <div>
-        <model-viewer src="models/bishop.glb" alt="Bishop Model" auto-rotate camera-controls></model-viewer>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <p>Knight</p>
-    <br>
-    <div>
-        <model-viewer src="models/knight.glb" alt="Knight Model" auto-rotate camera-controls></model-viewer>
+    <div id="blender">
+
+        <p>Here I have the iconic dounut, I did this over summer vacation following a
+            tutorial by the blender guru.
+        </p>
+        <h2>Donut</h2>
+
+        <div>
+            <model-viewer src="models/donut.glb" alt="donut Model" auto-rotate camera-controls></model-viewer>
+        </div>
+        <br>
+        <hr>
+        <p><b>
+                Our first blender assignement this semester is to model chess pieces.
+            </b></p>
+        <br>
+        <p>
+            Ps: they dont have any texture yet cause that will be our next assignment.
+        </p>
+        <br>
+        <h2>Pawn</h2>
+        <br>
+        <div>
+            <model-viewer src="models/pawn.glb" alt="Pawn Model" auto-rotate camera-controls></model-viewer>
+        </div>
+        <br>
+        <hr>
+        <h2>Rook</h2>
+        <br>
+        <div>
+            <model-viewer src="models/rook.glb" alt="Rook Model" auto-rotate camera-controls></model-viewer>
+            </model-viewer>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>King</h2>
+        <br>
+        <div>
+            <model-viewer src="models/king.glb" alt="King Model" auto-rotate camera-controls></model-viewer>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Queen</h2>
+        <br>
+        <div>
+            <model-viewer src="models/queen.glb" alt="Queen Model" auto-rotate camera-controls></model-viewer>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Bishop</h2>
+        <br>
+        <div>
+            <model-viewer src="models/bishop.glb" alt="Bishop Model" auto-rotate camera-controls></model-viewer>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Knight</h2>
+        <br>
+        <div>
+            <model-viewer src="models/knight.glb" alt="Knight Model" auto-rotate camera-controls></model-viewer>
+        </div>
     </div>
     <br>
     <br>
