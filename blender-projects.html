@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blender</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
     <style>
         h2 {
             text-align: center;
@@ -21,7 +21,7 @@
         }
 
 
-        model-viewer {
+        /*model-viewer {
             width: 300px;
             height: 300px;
             margin: auto;
@@ -31,11 +31,28 @@
             border-radius: 8px;
             padding: 10px;
 
-        }
+        }*/
 
-          #blender {
+        #blender {
             margin: 100px;
             padding: 120px, 20px, 10px, 20px;
+        }
+
+        .chess {
+            display: inline-block;
+            margin: 50px;
+            width: 20%;
+            flex: 1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.4s;
+        }
+
+        .chess:hover {
+            transform: scale(1.5);
+            box-shadow: 0 0 20px rgba(24, 157, 167, 0.5);
         }
     </style>
 </head>
@@ -54,7 +71,7 @@
         <br>
 
         <div>
-           <img src="pics/donutren.png" alt="donut" width="50%"><img src="pics/donutsh.png" alt="donut" width="50%">
+            <img src="pics/donutren.png" alt="donut" width="50%"><img src="pics/donutsh.png" alt="donut" width="50%">
         </div>
         <br>
         <hr>
@@ -63,54 +80,17 @@
                 Our first blender assignement this semester is to model chess pieces.
             </b></p>
         <br>
+        <img src="pics/pawn.png" alt="pawn image" class="chess">
+        <img src="pics/king.png" alt="king image" class="chess">
+        <img src="pics/queen.png" alt="queen image" class="chess">
+        <img src="pics/rook.png" alt="pawn image" class="chess">
+        <img src="pics/bishop.png" alt="king image" class="chess">
+        <img src="pics/knight.png" alt="queen image" class="chess">
         <p>
             Ps: they dont have any texture yet cause that will be our next assignment.
         </p>
         <br>
-        <h2>Pawn</h2>
-        <br>
-        <div>
-            <model-viewer src="models/pawn.glb" alt="Pawn Model" auto-rotate camera-controls></model-viewer>
-        </div>
-        <br>
-        <hr>
-        <h2>Rook</h2>
-        <br>
-        <div>
-            <model-viewer src="models/rook.glb" alt="Rook Model" auto-rotate camera-controls></model-viewer>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <h2>King</h2>
-        <br>
-        <div>
-            <model-viewer src="models/kingfinal.glb" alt="King Model" auto-rotate camera-controls></model-viewer>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <h2>Queen</h2>
-        <br>
-        <div>
-            <model-viewer src="models/queenblend.glb" alt="Queen Model" auto-rotate camera-controls></model-viewer>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <h2>Bishop</h2>
-        <br>
-        <div>
-            <model-viewer src="models/bishop.glb" alt="Bishop Model" auto-rotate camera-controls></model-viewer>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <h2>Knight</h2>
-        <br>
-        <div>
-            <model-viewer src="models/knight.glb" alt="Knight Model" auto-rotate camera-controls></model-viewer>
-        </div>
+
     </div>
     <br>
     <br>
